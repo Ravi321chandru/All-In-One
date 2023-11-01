@@ -1,0 +1,81 @@
+
+
+body{
+    background-color: rgb(23, 9, 29);
+    margin-bottom: 4%;
+}
+
+.home:hover{
+    border:6px groove rgb(253, 253, 253);
+    transform: scale(40px,40px);
+    background-color: rgb(253, 253, 253);
+}
+
+.text:hover{
+    text-decoration:underline solid rgb(238, 207, 32) ;
+}
+.elements{
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 4%;
+}
+
+
+.elements:hover{
+    border:8px groove rgb(238, 207, 32);
+    transform: scale(40px,40px);
+    background-color: rgb(238, 207, 32);
+}
+
+.logo img{
+    width: 100%;
+    border-top-left-radius:2%;
+    border-top-right-radius:2%;
+    }
+
+.name{
+    text-align: center;
+    /* border-bottom-left-radius: 2.7%;
+    border-bottom-right-radius:2.7%; */
+    background-color: white;
+
+}
+
+.grids
+{
+    /* display: grid;
+    grid-template-columns: 500px 500px 500px;
+    row-gap: 5px;
+    justify-content: center; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto 3%;
+}
+
+ @media screen and (max-width: 500px)
+{
+
+    #logo{
+        width:400px;
+        height: 200px;;
+    }
+
+    .elements{
+        width:95%;
+    }
+    .grids{
+        flex-direction: column;
+    }
+
+    }
+    @media(hover:hover){
+        .elements:hover{
+            border:8px groove yellow;
+            transform: scale(40px,40px);
+            background-color: yellow;
+    }
+
+} 
